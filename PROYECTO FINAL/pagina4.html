@@ -1,25 +1,67 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
+
 <head>
-<title>Pagina 4</title>
+<meta charset="UTF-8">
+<title>La Polémica</title>
 <link rel="stylesheet" href="css/style4.css">
 </head>
 
 <body>
 
-<div class="imagen izquierda">
-<img src="assets/imagen5.jpg">
+<section class="pagina">
+
+<img src="assets/arbitro.jpg" class="imagen-fondo">
+
+<div class="contenido">
+
+<h1>La Polémica</h1>
+
+<p>
+Después de la celebración, el árbitro anuló el gol por fuera de lugar.
+La decisión generó debate entre aficionados, periodistas y analistas. Los colombianos quedamos descuadrados, fuera de sí. 
+</p>
+
+<button onclick="mostrarOpiniones()">Ver opiniones</button>
+
+<div id="opiniones" class="opiniones">
+
+<p>📰 Algunos periodistas afirmaron que la decisión fue correcta.</p>
+<p>⚽ Otros creen que fue una de las jugadas más dolorosas para Colombia.</p>
+<p>🎙 En programas deportivos el debate duró semanas. Incluso a día de hoy, es y seguirá siendo aún un tema relevante.</p>
+
 </div>
 
-<div class="imagen derecha">
-<img src="assets/imagen6.jpg">
+<button onclick="audioNarrador()">Escuchar narración</button>
+
+<audio id="audioNarrador">
+<source src="assets/narrador_fuera.mp3" type="audio/mp3">
+</audio>
+
+<div class="memes">
+
+<h2>Reacciones en redes</h2>
+
+<div class="meme">
+<img src="assets/meme 1.webp">
 </div>
 
+<div class="meme">
+<img src="assets/meme 2.jpg">
+</div>
 
+<div class="meme">
+<img src="assets/meme3.jpeg">
+</div>
 
-<h1>Se dio la vida en le cesped</h1>
+</div>
 
-<script src="java/scroll.js"></script>
+</div>
+
+</section>
+
+<script src="JAVA/script4.js"></script>
+<script src="JAVA/scroll.js"></script>
 
 </body>
 </html>

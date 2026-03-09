@@ -1,27 +1,65 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
+
 <head>
-<title>Pagina 5</title>
+<meta charset="UTF-8">
+<title>Conclusión</title>
 <link rel="stylesheet" href="css/style5.css">
 </head>
 
 <body>
 
-<div class="imagen izquierda">
-<img src="assets/imagen7.jpg">
+<section class="pagina">
+
+<img src="assets/estadio_final.jpg" class="imagen-fondo">
+
+<div class="contenido">
+
+<h1>Un Momento Inolvidable</h1>
+
+<p>
+Aunque el gol fue anulado, el momento quedó grabado en la memoria
+de millones de colombianos. Durante unos segundos, todo un país
+celebró con emoción.
+</p>
+
+<button onclick="mostrarHistoria()">¿Qué habría pasado si el gol valía?</button>
+
+<p id="historiaAlterna" class="historia">
+Si el gol hubiera sido válido, Colombia habría empatado el partido
+y posiblemente cambiado el rumbo del encuentro. Muchos aficionados
+todavía imaginan ese momento como uno de los grandes “qué hubiera
+pasado si…” del fútbol colombiano.
+</p>
+
+<button onclick="mostrarVideo()">Ver video de la jugada</button>
+
+<div id="videoGol" class="video">
+
+<video width="500" controls>
+<source src="assets/jugada.mp4" type="video/mp4">
+</video>
+
 </div>
 
-<div class="imagen derecha">
-<img src="assets/imagen8.jpg">
+<div class="reflexion">
+
+<button onclick="mostrarReflexion()">Reflexión final</button>
+
+<p id="reflexionTexto">
+El fútbol no solo se recuerda por los resultados, sino por las emociones
+que genera. Este momento demuestra cómo un solo segundo puede quedar
+en la historia del deporte. El “fuera de lugar” puede entenderse como el momento en que una nación se adelanta a su nueva posición histórica. No es derrota absoluta; es un indicio de desplazamiento y transformación. 
+</p>
+
 </div>
 
+</div>
 
-    
-<h1>Se perdio <br> <strong></strong>
-    es momento de descanzar
-</h1>
+</section>
 
-<script src="java/scroll.js"></script>
+<script src="JAVA/script5.js"></script>
+<script src="JAVA/scroll.js"></script>
 
 </body>
 </html>

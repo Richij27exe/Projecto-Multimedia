@@ -1,23 +1,64 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
+
 <head>
-<title>Pagina 3</title>
+<meta charset="UTF-8">
+<title>El Gol de Yepes</title>
 <link rel="stylesheet" href="css/style3.css">
 </head>
 
 <body>
 
-<div class="imagen izquierda">
-<img src="assets/arbitro 2.webp">
+<section class="pagina">
+
+<img src="assets/yepes.jpg" class="imagen-fondo">
+
+<div class="contenido">
+
+<h1>El Gol de Yepes</h1>
+
+<p>
+En el minuto final del partido, Mario Yepes empujó el balón al fondo
+de la red. Durante unos segundos, todo el país creyó que Colombia
+había empatado el partido.
+</p>
+
+<button onclick="mostrarDato()">Mostrar dato</button>
+
+<p id="datoExtra" class="dato">
+El estadio celebró el gol durante varios segundos antes de que
+el árbitro lo anulara por fuera de lugar.
+</p>
+
+<button onclick="reproducirAudio()">Escuchar reacción del estadio</button>
+
+<audio id="audioEstadio">
+<source src="assets/reaccion_estadio.mp3" type="audio/mp3">
+</audio>
+
+<button onclick="mostrarImagenes()">Ver imágenes de la jugada</button>
+
+<div id="imagenesExtra" class="imagenes">
+
+<img src="assets/yepes-balon.jpg">
+<img src="assets/momento.jpg">
+
 </div>
 
-<div class="imagen derecha">
-<img src="assets/arbitro.jpg">
+<div class="hover-box">
+Pasa el mouse para ver contexto
+<div class="hover-text">
+Este momento se convirtió en uno de los más recordados del
+fútbol colombiano por la emoción y la polémica que generó. Sin embargo, segundos después nos llega la gran frustración.
+</div>
 </div>
 
-<h1>Se jugó</h1>
+</div>
 
-<script src="java/scroll.js"></script>
+</section>
+
+<script src="JAVA/script3.js"></script>
+<script src="JAVA/scroll.js"></script>
 
 </body>
 </html>
